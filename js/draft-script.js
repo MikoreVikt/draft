@@ -73,7 +73,7 @@
 // const SILVER_DISCOUND = 0.05;
 // const GOLD_DISCOUND = 0.1;
 
-// const totalSpend = 2000;
+// let totalSpend = 2000;
 // let paymend = 500;
 // let discount = 0;
 
@@ -90,4 +90,7 @@
 //   console.log(`Не партнёр, скидка 0%`);
 //   discount = BASE_DISCOUND;
 // }
+// paymend = paymend - paymend * discount;
 // console.log(`Оформляем заказ на сумму ${paymend} со скидкой ${discount * 100}%`);
+// totalSpend += paymend;
+// console.log(`Общая сумма потраченного теперь ${totalSpend}`);
