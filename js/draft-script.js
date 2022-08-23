@@ -68,22 +68,26 @@
 //                                                          ! "Sale" !
 // .
 // .
-const BASE_DISCOUND = 0;
-const BRONZE_DISCOUND = 0.02;
-const SILVER_DISCOUND = 0.05;
-const GOLD_DISCOUND = 0.1;
+// const BASE_DISCOUND = 0;
+// const BRONZE_DISCOUND = 0.02;
+// const SILVER_DISCOUND = 0.05;
+// const GOLD_DISCOUND = 0.1;
 
-const totalSpend = 2000;
-let paymend = 500;
-let discount = 0;
+// const totalSpend = 2000;
+// let paymend = 500;
+// let discount = 0;
 
-if (totalSpend >= 5000) {
-  discount = GOLD_DISCOUND;
-} else if (totalSpend >= 1000) {
-  discount = SILVER_DISCOUND;
-} else if (totalSpend >= 100) {
-  discount = BRONZE_DISCOUND;
-} else {
-  discount = BASE_DISCOUND;
-}
-console.log(`Оформляем заказ на сумму ${paymend} со скидкой ${discount}`);
+// if (totalSpend >= 5000) {
+//   console.log(`Золотой партнёр, скидка 10%`);
+//   discount = GOLD_DISCOUND;
+// } else if (totalSpend >= 1000) {
+//   console.log(`Серебрянный партнёр, скидка 5%`);
+//   discount = SILVER_DISCOUND;
+// } else if (totalSpend >= 100) {
+//   console.log(`Бронзовый партнёр, скидка 2%`);
+//   discount = BRONZE_DISCOUND;
+// } else {
+//   console.log(`Не партнёр, скидка 0%`);
+//   discount = BASE_DISCOUND;
+// }
+// console.log(`Оформляем заказ на сумму ${paymend} со скидкой ${discount * 100}%`);
