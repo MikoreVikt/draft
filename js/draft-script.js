@@ -94,3 +94,6 @@
 // console.log(`Оформляем заказ на сумму ${paymend} со скидкой ${discount * 100}%`);
 // totalSpend += paymend;
 // console.log(`Общая сумма потраченного теперь ${totalSpend}`);
+//.
+//.
+//.
