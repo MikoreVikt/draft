@@ -1,25 +1,85 @@
+//// Потрібно створити 4 методи об'єкту
+// 1 виводить суму на карті (назву вводимо в prompt())
+// 2 додає нову карту (назву вводимо в prompt())
+// 3 зняти з карти (назву вводимо в prompt() та суму в prompt())
+// 4 додати на карту (назву вводимо в prompt() та суму в prompt())
+
+const bankSystem = {
+  privat: 1000,
+  mono: 1500,
+
+  getSumm() {
+    const card = prompt();
+    if (this.hasOwnProperty(card)) {
+      return this[card];
+    }
+    return `Карты с таким названием нет`;
+  },
+
+  addCard() {
+    const newCard = prompt();
+    if (!bankSystem.hasOwnProperty(newCard)) {
+      this[newCard] = 0;
+      return `Карта успешно создана`;
+    }
+    return `Такая карта уже существует`;
+  },
+
+  withdraw() {
+    const nameCard = prompt(`Enter card name`);
+
+    if (this.hasOwnProperty(nameCard)) {
+      const summ = prompt(`Enter your summ`);
+      if (this[nameCard] >= summ) {
+        return (this[nameCard] -= summ);
+      } else {
+        return `Суммы на карте не достаточно`;
+      }
+    } else {
+      return `Такой карты нет`;
+    }
+  },
+
+  replenishment() {
+    const nameCard = prompt(`Enter card name`);
+    if (this.hasOwnProperty(nameCard)) {
+      const summ = prompt(`Enter your summ`);
+      return (this[nameCard] += +summ);
+    }
+    return `Такой карты нет`;
+  },
+};
+
+// console.log(bankSystem.getSumm());
+// console.log(bankSystem.addCard());
+// console.log(bankSystem.withdraw());
+// console.log(bankSystem.replenishment());
+// console.log(bankSystem);
+// ==========================================================================================
+
+// ==========================================================================================
 // -----------------------------------------TASK 4------------------------------------------//
 //Створити функцію яка буде приймати 2 параметри
 //1 параметр це масив всіх юзерів. (users)
 //2 параметр це масив з чоловічими іменами. (mens)
 // Функція повина повертати масив з жіночими іменами.
 
-// const users = ['Artem', 'Anna', 'Larisa', 'Maksim', 'Svetlana', 'David', 'Roman', 'Olga'];
-// const mens = ['Artem', 'Maksim', 'David', 'Roman'];
+const users = ['Artem', 'Anna', 'Larisa', 'Maksim', 'Svetlana', 'David', 'Roman', 'Olga'];
+const mens = ['Artem', 'Maksim', 'David', 'Roman'];
 
-// function sortUsres(users, mens) {
-//   const women = [];
-//   console.log(users);
+function sortUsres(users, mens) {
+  const women = [];
+  console.log(users);
 
-//   for (const user of users) {
-//     if (!mens.includes(user)) {
-//       //   console.log(user);
-//       women.push(user);
-//     }
-//   }
-//   //   console.log(womans);
-//   return women;
-// }
+  for (const user of users) {
+    if (!mens.includes(user)) {
+      //   console.log(user);
+      women.push(user);
+    }
+  }
+  //   console.log(womans);
+  return women;
+}
 
 // console.log(sortUsres(users, mens));
 
@@ -48,9 +108,7 @@
 //Функція повертає меседж, як вказано у прикладах:
 //Використовувати switch()
 
-// function stringBuilder(users){
-
-// }
+// function stringBuilder(users){}
 
 // stringBuilder([])//"no one likes this";
 // stringBuilder(["Peter"])//"Peter likes this";
@@ -65,7 +123,5 @@
 
 // const numbers = [1, 2, 3, 2, 1, 17, 19]
 
-// function getCommonElements(arr){
-
-// };
+// function getCommonElements(arr){};
 // getCommonElements(numbers)
