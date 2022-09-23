@@ -94,6 +94,13 @@
 // Потрібно мутувати масив так щоб залишились тільки (імена) елементи типу String.
 // const arr = ['Anna', 3, 'Roma', 17, 'Kate', 14, 'Oleg'];
 
+// arr.forEach((el, idx) => {
+//   if (typeof el !== 'string') {
+//     arr.splice(idx, 1);
+//   }
+// });
+
+// console.log(arr);
 // =========================================================================================
 // -----------------------------------------TASK 8------------------------------------------//
 // Потрібно створити світлофор за допомогою switch()
@@ -126,7 +133,29 @@
 //Функція повертає меседж, як вказано у прикладах:
 //Використовувати switch()
 
-// function stringBuilder(users) {}
+// function stringBuilder(users) {
+//   switch (users.length) {
+//     case 0:
+//       return 'no one likes this';
+//       break;
+
+//     case 1:
+//       return `${users[0]} likes this`;
+//       break;
+
+//     case 2:
+//       return `${users[0]} and ${users[1]} like this`;
+//       break;
+
+//     case 3:
+//       return `${users[0]}, ${users[1]} and ${users[2]} like this`;
+//       break;
+
+//     default:
+//       return `${users[0]}, ${users[1]} and ${users.length - 2} others like this`;
+//       break;
+//   }
+// }
 
 // console.log(stringBuilder([])); //"no one likes this";
 // console.log(stringBuilder(['Peter'])); //"Peter likes this";
