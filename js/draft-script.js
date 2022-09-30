@@ -274,9 +274,97 @@
 
 //   return uniqueNumbers;
 // }
-
+//.
 // console.log(getCommonElements([1, 2, 3, 2, 1, 17, 19]));
+//.
+//.
+//.
+//.=====================================================================================================
+//.
+//.
+// Стоврити функцію яка буде перебирати масив обєктів (films),з кожного обєкта потрібно взяти IDs жанрів фільмів та знайти
+// їх в іншому єбєкті який буде містити в собі ID та назву жанру відповідну до цего ID.
+// Функція повертає стрінгу з назвами фільмів та жанрами до яких цей фільм входить, якщо кількість жанрів більше двох потрібно
+//  вивести назву перших двох жанрів і додати надпис 'Others'.
+// В результаті маємо отримати:
+//
+// Films list:
+// 1. 'Interceptor: Action, Thriller, Others.'
+// 2. 'Fantastic Beasts: The Secrets of Dumbledore: Fantasy, Adventure, Others.'
+// 3. 'Last Seen Alive: Action, Thriller.'
+// 4. 'Jurassic World Dominion: Science Fiction, Action, Others.'
 
+// const films = [
+//   {
+//     title: 'Interceptor',
+//     genre_ids: [28, 53, 12],
+//   },
+//   {
+//     title: 'Fantastic Beasts: The Secrets of Dumbledore',
+//     genre_ids: [14, 12, 28],
+//   },
+//   {
+//     title: 'Last Seen Alive',
+//     genre_ids: [28, 53],
+//   },
+//   {
+//     title: 'Jurassic World Dominion',
+//     genre_ids: [878, 28, 12, 53],
+//   },
+// ];
+
+// const genres = [
+//   {
+//     id: 28,
+//     name: 'Action',
+//   },
+//   {
+//     id: 12,
+//     name: 'Adventure',
+//   },
+//   {
+//     id: 14,
+//     name: 'Fantasy',
+//   },
+//   {
+//     id: 878,
+//     name: 'Science Fiction',
+//   },
+//   {
+//     id: 53,
+//     name: 'Thriller',
+//   },
+//   {
+//     id: 10752,
+//     name: 'War',
+//   },
+//   {
+//     id: 37,
+//     name: 'Western',
+//   },
+// ];
+
+// films.forEach(film => {
+//   const names = film.genre_ids.map(id => {
+//     return genres.find(genre => genre.id === id).name;
+//   });
+//   //console.log(names);
+//   film.genreName = names;
+//   console.log(film);
+// });
+
+// const list = films.reduce((acc, film, idx) => {
+//   return (
+//     acc +
+//     `${idx + 1} ${film.title} : ${
+//       film.genreName.length < 3
+//         ? film.genreName.join(', ')
+//         : `${film.genreName[0]}, ${film.genreName[1]}, Others... \n `
+//     } `
+//   );
+// }, 'film list \n');
+// .
+// console.log(list);
 //.
 //.
 //.=====================================================================================================
