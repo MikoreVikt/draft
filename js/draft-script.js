@@ -370,3 +370,124 @@
 //.=====================================================================================================
 //.
 //.
+// const cars = [
+//   {
+//     car: 'Honda',
+//     type: 'Civic',
+//     price: 12000,
+//     img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTCOHzdE-dK6WK7ax8NzQolTcCWA_jhJD-CRGWfqKJIJuGs8ML_-OyiDwzsdC8jOi_K10&usqp=CAU',
+//   },
+//   {
+//     car: 'Audi',
+//     type: 'Q7',
+//     price: 40000,
+//     img: 'https://upload.wikimedia.org/wikipedia/commons/8/8b/2017_Audi_Q7_S_Line_Quattro_3.0_Front.jpg',
+//   },
+//   {
+//     car: 'BMW',
+//     type: '5 siries',
+//     price: 9000,
+//     img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUH96e58ynLO8SXMsFTNYkJci79eAZ8CyqcZsZ8snvzz2sfLl3Ojd1BQoaWBcrMKWvSYc&usqp=CAU',
+//   },
+//   {
+//     car: 'Honda',
+//     type: 'Accord',
+//     price: 20000,
+//     img: 'https://upload.wikimedia.org/wikipedia/commons/7/76/2021_Honda_Accord_Sport_%28facelift%29%2C_front_11.30.21.jpg',
+//   },
+//   {
+//     car: 'Volvo',
+//     type: 'XC60',
+//     price: 7000,
+//     img: 'https://www.volvocars.com/media/shared-assets/master/images/pages/my19/xc60-my19/accessories/xc60my19_accessories_exteriorfeature2_1.jpg?w=320',
+//   },
+//   {
+//     car: 'Honda',
+//     type: 'Accord',
+//     price: 20000,
+//     img: 'https://upload.wikimedia.org/wikipedia/commons/7/76/2021_Honda_Accord_Sport_%28facelift%29%2C_front_11.30.21.jpg',
+//   },
+//   {
+//     car: 'Volvo',
+//     type: 'XC60',
+//     price: 7000,
+//     img: 'https://www.volvocars.com/media/shared-assets/master/images/pages/my19/xc60-my19/accessories/xc60my19_accessories_exteriorfeature2_1.jpg?w=320',
+//   },
+// ];
+
+// const ulRef = document.querySelector(`.list`);
+// const formRef = document.querySelector(`.form`);
+// formRef.addEventListener(`submit`, searchCar);
+
+// function cardsMarkup(cars) {
+//   const markup = cars
+//     .map(({ car, type, price, img }) => {
+//       return `<li>
+//         <img
+//         src=${img}
+//         width="300px"
+//         />
+//         <h2>${car}</h2>
+//         <h3>${type}</h3>
+//         <p>${price}</p>
+//         </li>`;
+//     })
+//     .join(``);
+//   ulRef.innerHTML = markup;
+// }
+
+// function searchCar(event) {
+//   event.preventDefault();
+//   const inputRef = event.currentTarget.elements.input.value;
+//   const selectRef = event.currentTarget.elements.select.value;
+
+//   const filteredCars = cars.filter(
+//     item => item[selectRef].toLowerCase() === inputRef.toLowerCase()
+//   );
+
+//   cardsMarkup(filteredCars);
+
+//   //   console.log(inputRef);
+//   //   console.log(selectRef);
+//   //   console.log(filteredCars);
+// }
+
+// cardsMarkup(cars);
+//
+// =============================================================================================================================
+//
+//
+// -----------------------------------------TASK 1------------------------------------------//
+// 1 Створити метод об'єкту який буде приймати 1 параметр назву факультету та повертати списoк імен учнів факультету
+// 2 Створити метод об'єкту який буде приймати 1 параметр назву факультету та повертати кількість очків факультета
+// 3 Створити метод об'єкту який буде виводити ім'я факультету в якого більше очків
+const hogvarts = {
+  griffindor: [
+    {
+      name: 'Harry',
+      points: 17,
+    },
+    {
+      name: 'Hermiona',
+      points: 19,
+    },
+    {
+      name: 'Ron',
+      points: 14,
+    },
+  ],
+  sliserin: [
+    {
+      name: 'Draco',
+      points: 17,
+    },
+    {
+      name: 'Goyl',
+      points: 14,
+    },
+    {
+      name: 'Crabbe',
+      points: 5,
+    },
+  ],
+};
