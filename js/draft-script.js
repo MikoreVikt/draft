@@ -454,6 +454,7 @@
 
 // cardsMarkup(cars);
 //
+//
 // =============================================================================================================================
 //
 //
@@ -461,33 +462,70 @@
 // 1 Створити метод об'єкту який буде приймати 1 параметр назву факультету та повертати списoк імен учнів факультету
 // 2 Створити метод об'єкту який буде приймати 1 параметр назву факультету та повертати кількість очків факультета
 // 3 Створити метод об'єкту який буде виводити ім'я факультету в якого більше очків
-const hogvarts = {
-  griffindor: [
-    {
-      name: 'Harry',
-      points: 17,
-    },
-    {
-      name: 'Hermiona',
-      points: 19,
-    },
-    {
-      name: 'Ron',
-      points: 14,
-    },
-  ],
-  sliserin: [
-    {
-      name: 'Draco',
-      points: 17,
-    },
-    {
-      name: 'Goyl',
-      points: 14,
-    },
-    {
-      name: 'Crabbe',
-      points: 5,
-    },
-  ],
-};
+// const hogvarts = {
+//   griffindor: [
+//     {
+//       name: 'Harry',
+//       points: 17,
+//     },
+//     {
+//       name: 'Hermiona',
+//       points: 19,
+//     },
+//     {
+//       name: 'Ron',
+//       points: 14,
+//     },
+//   ],
+//   sliserin: [
+//     {
+//       name: 'Draco',
+//       points: 17,
+//     },
+//     {
+//       name: 'Goyl',
+//       points: 14,
+//     },
+//     {
+//       name: 'Crabbe',
+//       points: 5,
+//     },
+//   ],
+
+//   studentNames(item) {
+//     return item.map(student => student.name);
+//   },
+
+//   amountPoints(item) {
+//     let amount = 0;
+//     for (const i of item) {
+//       amount += i.points;
+//     }
+
+//     return amount;
+//   },
+
+//   winner() {
+//     const griffindorPoints = this.amountPoints(hogvarts.griffindor);
+//     const sliserinPoints = this.amountPoints(hogvarts.sliserin);
+//     if (griffindorPoints > sliserinPoints) {
+//       return `griffindor is winner! Their number of points: ${griffindorPoints}`;
+//     } else {
+//       return `sliserin is winner! Their number of points: ${sliserinPoints}`;
+//     }
+//   },
+// };
+
+// console.log(`griffindor students: `, hogvarts.studentNames(hogvarts.griffindor));
+// console.log(`sliserin students: `, hogvarts.studentNames(hogvarts.sliserin));
+
+// console.log(`griffindor points: `, hogvarts.amountPoints(hogvarts.griffindor));
+// console.log(`sliserin points: `, hogvarts.amountPoints(hogvarts.sliserin));
+
+// console.log(hogvarts.winner());
+
+//
+//
+// =============================================================================================================================
+//
+//
