@@ -767,62 +767,73 @@
 // =============================================================================================================================
 // ---------------------------------------------------------TASK-----------------------------------------------------------//
 // Створити функцію яка буде шукати нарциса. Головна умова нарциса знають всі, нарцис не знає нікого.
-const people1 = [
-  {
-    name: 'Alex',
-    know: ['Eva', 'Jhon'],
-  },
-  {
-    name: 'Ivan',
-    know: ['Jhon', 'Alex'],
-  },
-  {
-    name: 'Eva',
-    know: ['Alex', 'Jhon'],
-  },
-  {
-    name: 'Jhon',
-    know: [Alex],
-  },
-]; //Not found
-const people2 = [
-  {
-    name: 'Alex',
-    know: ['Eva', 'Jhon'],
-  },
-  {
-    name: 'Jhon',
-    know: [],
-  },
-  {
-    name: 'Eva',
-    know: [],
-  },
-  {
-    name: 'Ivan',
-    know: ['Jhon', 'Alex'],
-  },
-]; // Not found
-const people3 = [
-  {
-    name: 'Alex',
-    know: ['Eva', 'Jhon'],
-  },
-  {
-    name: 'Jhon',
-    know: [],
-  },
-  {
-    name: 'Eva',
-    know: ['Alex', 'Jhon'],
-  },
-  {
-    name: 'Ivan',
-    know: ['Jhon', 'Alex'],
-  },
-]; // Jhon
+// const people1 = [
+//   {
+//     name: 'Alex',
+//     know: ['Eva', 'Jhon'],
+//   },
+//   {
+//     name: 'Ivan',
+//     know: ['Jhon', 'Alex'],
+//   },
+//   {
+//     name: 'Eva',
+//     know: ['Alex', 'Jhon'],
+//   },
+//   {
+//     name: 'Jhon',
+//     know: ['Alex'],
+//   },
+// ]; //Not found
+// const people2 = [
+//   {
+//     name: 'Alex',
+//     know: ['Eva', 'Jhon'],
+//   },
+//   {
+//     name: 'Jhon',
+//     know: [],
+//   },
+//   {
+//     name: 'Eva',
+//     know: [],
+//   },
+//   {
+//     name: 'Ivan',
+//     know: ['Jhon', 'Alex'],
+//   },
+// ]; // Not found
+// const people3 = [
+//   {
+//     name: 'Alex',
+//     know: ['Eva', 'Jhon'],
+//   },
+//   {
+//     name: 'Jhon',
+//     know: [],
+//   },
+//   {
+//     name: 'Eva',
+//     know: ['Alex', 'Jhon'],
+//   },
+//   {
+//     name: 'Ivan',
+//     know: ['Jhon', 'Alex'],
+//   },
+// ]; // Jhon
 
-function findNarcissus(array) {}
+// function findNarcissus(array) {
+//   let noOneKnows = array.find(el => el.know.length === 0)?.name;
+//   let everyoneKnows = array
+//     .filter(el => el.name !== noOneKnows)
+//     .every(el => el.know.includes(noOneKnows));
+
+//   return everyoneKnows ? noOneKnows : 'Not found';
+// }
+
+// console.log(findNarcissus(people1));
+// console.log(findNarcissus(people2));
+// console.log(findNarcissus(people3));
 
 //
 //
@@ -832,28 +843,41 @@ function findNarcissus(array) {}
 // Потрібно перебрати масив і якщо він має об'єкти в яких дублюються айді то квонтіті цих елементів потрібно сплюсувати
 // а ті обє'кти в яких айді співпав видалити з масиву.
 // (Потрібно мутувати масив, створювати новий не потрібно)
-// const products = [{
-//    id: 'sku1',
-//    qty: 1,
-// }, {
-//    id: 'sku2',
-//    qty: 2,
-// }, {
-//    id: 'sku3',
-//    qty: 3,
-// }, {
-//    id: 'sku1',
-//    qty: 6,
-// }, {
-//    id: 'sku1',
-//    qty: 8,
-// }, {
-//    id: 'sku2',
-//    qty: 19,
-// }, {
-//    id: 'sku4',
-//    qty: 1,
-// }]
+// const products = [
+//   {
+//     id: 'sku1',
+//     qty: 1,
+//   },
+//   {
+//     id: 'sku2',
+//     qty: 2,
+//   },
+//   {
+//     id: 'sku3',
+//     qty: 3,
+//   },
+//   {
+//     id: 'sku1',
+//     qty: 6,
+//   },
+//   {
+//     id: 'sku1',
+//     qty: 8,
+//   },
+//   {
+//     id: 'sku2',
+//     qty: 19,
+//   },
+//   {
+//     id: 'sku4',
+//     qty: 1,
+//   },
+// ]; // sku1: 15, sku2: 21, sku3: 3, sku4: 1
+
+// function fn(array) {}
+
+// console.log(fn(products));
+
 //
 //
 // =============================================================================================================================
