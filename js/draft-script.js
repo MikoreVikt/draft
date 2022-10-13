@@ -874,7 +874,19 @@
 //   },
 // ]; // sku1: 15, sku2: 21, sku3: 3, sku4: 1
 
-// function fn(array) {}
+// function fn(array) {
+//   let uniqEl = [];
+//   array.forEach(el => {
+//     let elId = uniqEl.find(e => e.id === el.id);
+//     if (!elId) {
+//       uniqEl.push(el);
+//     } else {
+//       elId.qty += el.qty;
+//     }
+//   });
+
+//   return uniqEl;
+// }
 
 // console.log(fn(products));
 
