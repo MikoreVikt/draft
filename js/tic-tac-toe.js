@@ -46,7 +46,7 @@ function onClick(evt) {
       localStorage.setItem(`firstPlayer`, JSON.stringify(firstValue));
       if (isWin(firstValue)) {
         setTimeout(() => {
-          alert(`${player} won!`);
+          alert(`${firstPlayerRef.textContent} won!`);
           onReset();
         });
         return;
@@ -56,7 +56,7 @@ function onClick(evt) {
       localStorage.setItem(`secondPlayer`, JSON.stringify(secondValue));
       if (isWin(secondValue)) {
         setTimeout(() => {
-          alert(`${player} won!`);
+          alert(`${secondPlayerRef.textContent} won!`);
           onReset();
         });
         return;
