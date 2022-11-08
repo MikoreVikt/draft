@@ -1,4 +1,4 @@
-// bearer key
+// bearer key: '3sru3q0Sisxo4TsZOe23'
 // pagination
 
 const ulRef = document.querySelector(`ul`);

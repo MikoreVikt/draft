@@ -33,3 +33,47 @@
 
 /* tic-tac-toe END*/
 /* ================================================================================ */
+/* rick-and-morty_list START */
+
+.rick-and-morty_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px auto;
+    width: 90%;
+    background-color: #dee9da;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.rick-and-morty_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin: 15px;
+    width: 20%;
+    background-color: #838567;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.rick-and-morty_item p {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.rick-and-morty_item img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.rick-and-morty_btn {
+    display: block;
+    margin: 25px auto;
+}
+
+/* rick-and-morty_list END */
+/* ================================================================================ */
